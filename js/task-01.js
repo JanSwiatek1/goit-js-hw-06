@@ -1,10 +1,10 @@
 const mainElement = document.querySelector('#categories');
-const grup = mainElement.querySelectorAll("li.item");
+const categories = mainElement.querySelectorAll("li.item");
 
-console.log('Number of grups: ', grup.length)
-for (const element of grup) {
+console.log('Number of categories: ', categories.length)
+for (const element of categories) {
     const category = element.querySelectorAll("ul");
-    console.log('Grup: ', element.firstElementChild.textContent);
+    console.log('Category: ', element.firstElementChild.textContent);
     for (const item of category) {
         console.log('Elements: ', item.children.length);
     }
