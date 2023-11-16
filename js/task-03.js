@@ -15,3 +15,4 @@ const images = [
 const gallery = document.querySelector('ul.gallery');
 const markup = images.map((image) => `<li><img src= "${image.url}" alt="${image.alt}"/></li>`).join("");
 gallery.insertAdjacentHTML('beforeend', markup);
+gallery.style.backgroundColor = "teal";
