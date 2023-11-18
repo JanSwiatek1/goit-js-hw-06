@@ -18,9 +18,9 @@ function handleSubmit(event) {
       Password: password.value
   }
 
-  
+    console.log(Save);
   if (email.value !== '' && password.value !== ''){     
-      console.log("Poprawne haslo");
+      console.log("Poprawnie wypełnione");
       form.reset();
 
   }
@@ -28,10 +28,7 @@ function handleSubmit(event) {
     alert("Wypełnij wszystkie pola!")
   }
 }
-  const Save = {
-      Email: email.value,
-      Password: password.value
-  }
+
   console.log(Save);
 // if (formMail.value !== "" && formPass.value !== "")
 // else 
