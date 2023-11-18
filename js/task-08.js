@@ -30,8 +30,3 @@ function handleSubmit(event) {
 }
 
   console.log(Save);
-// if (formMail.value !== "" && formPass.value !== "")
-// else 
-// if (email.value === "" || password.value === "") {
-//       alert("Wypełnij wszystkie pola!")
-//   }
