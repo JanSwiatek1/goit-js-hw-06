@@ -12,15 +12,29 @@ function handleSubmit(event) {
   const email = form.elements.email;
   const password = form.elements.password;
   
-  if (email.value === "" || password.value === "") {
-    //   return console.log("Wypełnij wszystkie pola!");
-        alert("Wypełnij wszystkie pola!")
-  }
-    const Save = {
-        Email: email.value,
-        Password: password.value
-    }
-    console.log(Save);
-  form.reset();
-}
 
+  const Save = {
+      Email: email.value,
+      Password: password.value
+  }
+
+  
+  if (email.value !== '' && password.value !== ''){     
+      console.log("Poprawne haslo");
+      form.reset();
+
+  }
+  else {
+    alert("Wypełnij wszystkie pola!")
+  }
+}
+  const Save = {
+      Email: email.value,
+      Password: password.value
+  }
+  console.log(Save);
+// if (formMail.value !== "" && formPass.value !== "")
+// else 
+// if (email.value === "" || password.value === "") {
+//       alert("Wypełnij wszystkie pola!")
+//   }
